@@ -1,0 +1,232 @@
+:root {
+  --primary-blue: #005a9c;
+  --accent-green: #6bc92e;
+  --text-dark: #333;
+  --text-light: #fff;
+  --bg-light: #f4f8fa;
+  --bg-white: #fff;
+  --border-color: #dee2e6;
+  --logo-gradient: linear-gradient(90deg, var(--accent-green));
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--text-dark);
+  background: url("Photo\Masjid-Bina-Qurani-Islamic-Boarding-School.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.headerClock {
+  background-color: orange;
+  padding: 10px 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerArtikel {
+  background-color: orange;
+  padding: 10px 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-logo {
+  height: 45px;
+}
+.mainClock {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+#lokasi {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  color: var(--primary-blue);
+  margin: 0;
+}
+
+#tanggal-hari-ini {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.clock-display #live-clock {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.next-prayer-info {
+  background: var(--logo-gradient);
+  color: var(--text-light);
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.next-prayer-info h2 {
+  margin: 0 0 8px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.next-prayer-info p {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.jadwal-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #6c757d;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--primary-blue);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.location-feature {
+  background-color: var(--bg-white);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.search-box {
+  display: inline-flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#search-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  width: 200px;
+}
+
+#search-button,
+#detect-location-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#search-button {
+  background-color: var(--primary-blue);
+}
+
+#detect-location-button {
+  background-color: var(--accent-green);
+}
+
+#search-button:hover,
+#detect-location-button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  display: flex;
+  background-color: var(--primary-blue);
+  color: var(--text-light);
+  justify-content: center;
+  padding: 15px;
+  font-size: 0.9em;
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .top-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .jadwal-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.Link {
+  text-decoration: none;
+  color: #fff;
+}
+.H1Penyemangat {
+  text-align: center;
+}
+.MainPenyemangat {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.Channel {
+  display: block;
+}
+/* Warna saat waktu sholat sedang berlangsung */
+.active-prayer {
+  background-color: var(--accent-green);
+  color: var(--bg-white);
+  border-color: var(--accent-green);
+  transform: scale(1.05);
+}
+
+.active-prayer h2,
+.active-prayer p {
+  color: var(--bg-white);
+}
+
+/* Warna sholat berikutnya (menandakan target countdown) */
+.next-prayer-highlight {
+  background-color: var(--accent-orange);
+  color: var(--bg-white);
+  border-color: var(--accent-orange);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Sholat - BQ Islamic Boarding School</title>
+    <link rel="shortcut icon" href="Photo\images.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/19685778a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="headerClock">
+      <nav>
+        <a href="https://binaqurani.sch.id/" class="logo">
+          <img
+            src="Photo/Logo-bina-qurani-islamic-boarding-school-1024x439.png"
+            alt="BQ Islamic Boarding School Logo"
+            class="navbar-logo"
+          />
+        </a>
+      </nav>
+      <a href="index.html" class="Link">Main Clock</a>
+      <a href="Tentang.html" class="Link">Artikel</a>
+    </header>
+    <main class="mainClock">
+      <div class="container">
+        <div class="top-info">
+          <div class="location-display">
+            <h1 id="lokasi">Bogor</h1>
+            <p id="tanggal-hari-ini">Memuat tanggal...</p>
+          </div>
+          <div class="clock-display">
+            <p id="live-clock">--:--:--</p>
+          </div>
+        </div>
+
+        <div id="next-prayer-info" class="next-prayer-info">
+          <h2>Waktu Sholat Berikutnya</h2>
+          <p>
+            <span id="next-prayer-name">---</span> dalam
+            <span id="countdown-timer">--:--:--</span>
+          </p>
+        </div>
+
+        <div class="jadwal-cards">
+          <div class="card">
+            <h2>Subuh</h2>
+            <p id="subuh">04:12</p>
+          </div>
+          <div class="card">
+            <h2>Dzuhur</h2>
+            <p id="dzuhur">11:41</p>
+          </div>
+          <div class="card">
+            <h2>Ashar</h2>
+            <p id="ashar">14:51</p>
+          </div>
+          <div class="card">
+            <h2>Maghrib</h2>
+            <p id="maghrib">17:49</p>
+          </div>
+          <div class="card">
+            <h2>Isya</h2>
+            <p id="isya">18:59</p>
+          </div>
+        </div>
+
+        <div class="location-feature">
+          <div class="search-box">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Cari nama kota..."
+            />
+            <button id="search-button">Cari</button>
+          </div>
+          <button id="detect-location-button">Gunakan Lokasi Saat Ini</button>
+        </div>
+
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Richie.</p>
+      <div class="Channel">
+        <p>Subscribe My Channel</p>
+        <a href="https://www.youtube.com/@richielegend" class="Link"
+          ><i class="fa-brands fa-youtube"></i> My Youtube</a
+        >
+      </div>
+      <div class="Channel">
+        <p>Follow All Of My Account</p>
+        <a href="https://www.tiktok.com/@richiegans81" class="Link"
+          ><i class="fa-brands fa-tiktok"></i> My TikTok</a
+        >
+        <div>
+          <a href="https://www.instagram.com/rich_stdio/" class="Link">
+            <i class="fa-brands fa-instagram"></i> My Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
